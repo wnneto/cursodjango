@@ -6,9 +6,15 @@ name = "pypi"
 [packages]
 django = "*"
 gunicorn = "*"
+pytest = "*"
 
 [dev-packages]
 flake8 = "*"
+pytest-django = "*"
+"django.test" = "*"
+pytest-cov = "*"
+codecov = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.8"
