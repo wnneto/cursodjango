@@ -14,11 +14,10 @@ import os
 from functools import partial
 from pathlib import Path
 import dj_database_url
-from decouple import Csv, config
+from decouple import config, Csv
 
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
