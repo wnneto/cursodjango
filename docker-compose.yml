@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+  database:
+    container_name: projetonk
+    image: postgres
+    restart: always
+    volumes:
+      - ./.pgdata:/var/lib/postgresql/data
+    environment:
+      - LC_ALL=C.UTF-8
+      - POSTGRES_PASSWORD=projetonk
+      - POSTGRES_USER=projetonk
+      - POSTGRES_DB=nk_db
+    ports:
+      - 5434:5432
